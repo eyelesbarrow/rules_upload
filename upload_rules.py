@@ -20,7 +20,6 @@ def uploadRules (filepath)
 
 	rules_df = pd.read_csv(r"filepath", sep=';')
 	project = BWProject(username=YOUR_ACCOUNT, password=YOUR_PASSWORD, project=YOUR_PROJECT)
-	rules_df = pd.read_csv(r"filepath", sep=';')
 	queries = BWQueries(project)
 
 	queryName_list = rules_df['queryName'].tolist()
